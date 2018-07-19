@@ -1,6 +1,6 @@
 <template>
     <mu-tabs :value="active"  
-    indicator-color="yellow" 
+    indicator-color="#ec87bf" 
     full-width
     
     >
@@ -48,17 +48,17 @@ export default {
     padding: 8px;
 }
 #app .mu-tabs {
-  background: linear-gradient(22deg, #f68b0e 0%, #ffd000 80%);
+  // background: linear-gradient(22deg, #f68b0e 0%, #ffd000 80%);
   
-  // background: linear-gradient(
-  //   to right,
-  //   #c6426e,
-  //   #642b73
-  // ); 
+  background: linear-gradient(
+    to right,
+    #c6426e,
+    #642b73
+  ); 
 
   position: fixed;
   left: 0;
-  top: 40px;
+  top: 45px;
 }
 img {
   width: 20px;

@@ -28,7 +28,7 @@
             <img class="disk-border" src="resource/image/play_disc.png" draggable="false">
         </div>
         <div class="disk-cover disk-cover-animation  anima" style="left: 50%;" ref='anima' >
-            <img class="album" :src="img?img.replace(/{size}/,'200'):''" draggable="false">
+            <img class="album" :src="img?img.replace(/{size}/,'200'):''" draggable="false" ref='img'>
             <img class="disk-border" src="../image/play_disc.png" draggable="false">
         </div>
         <div class="disk-cover disk-cover-animation" style="left: 554px;">
@@ -120,10 +120,12 @@ export default {
       if (this.num) {
         this.$store.state.el.play();
 
-        this.$refs.anima.className = "disk-cover disk-cover-animation  anima";
+        this.$refs.anima.className = "disk-cover disk-cover-animation anima ";
+       
       } else {
         this.$store.state.el.pause();
-        this.$refs.anima.className = "disk-cover disk-cover-animation  ";
+        this.$refs.anima.className = "disk-cover disk-cover-animation";
+        
       }
     },
     // fn2() {
@@ -131,7 +133,7 @@ export default {
     //   if (this.len >= this.$store.state.indexData.list.length) {
     //     this.len = 0;
     //   }
-     
+
     //   setTimeout(e => {
     //     //  this.pbhash = this.$store.state.indexData.list[this.len].hash;
     //   this.$store.dispatch("play", this.$store.state.indexData.list[this.len].hash);
@@ -193,7 +195,6 @@ export default {
 </script>
 
 <style >
-
 .wrapper .mu-button {
   position: absolute;
   background: rgba(253, 253, 253, 0.05);
@@ -412,6 +413,7 @@ body {
 .anima {
   animation-play-state: running !important;
 }
+
 #app .process-bar .cur {
   background-color: #fb0d0d;
   height: 2px;
@@ -650,6 +652,15 @@ li.active > span {
   .cur .process-btn {
     width: 20px;
     height: 20px;
+  }
+
+  #app .animate {
+    animation: round 10s linear infinite !important;
+  }
+  @keyframes round {
+    100% {
+      transform: rotate(1turn) !important;
+    }
   }
 }
 </style>

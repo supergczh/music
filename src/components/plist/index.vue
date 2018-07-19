@@ -89,6 +89,8 @@ import {songpage as data} from '../../json.js';
 }
 #plist li{
     height: 6.5rem;
+    display: flex;
+    align-items: center;
     border-bottom: 1px solid #ccc;
 }
 #plist .mu-item-action{
@@ -97,6 +99,7 @@ import {songpage as data} from '../../json.js';
 }
 #plist .mu-item-wrapper,#plist .mu-item.has-avatar{
     height: 100%;
+    width: 100%;
 }
 #plist .mu-item-title{
     

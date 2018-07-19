@@ -53,7 +53,7 @@ import {list as data} from '../../json.js';
 }
 #index{
     width: 100%;
-    height:4rem;
+    height:4.5rem;
     /* overflow-y: hidden; */
 }
 #rank .demo-loadmore-wrap {
@@ -71,7 +71,10 @@ import {list as data} from '../../json.js';
     border-radius:0;
 }
 #rank li{
+    width: 100%;
     height: 7.5rem;
+    display: flex;
+    align-items: center;
     border-bottom: 1px solid #ccc;
 }
 #rank .mu-item-action{
@@ -79,6 +82,7 @@ import {list as data} from '../../json.js';
     min-width:0;
 }
 #rank .mu-item-wrapper,#rank .mu-item.has-avatar{
+    width: 100%;
     height: 100%;
 }
 #rank .mu-item-title{

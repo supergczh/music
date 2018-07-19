@@ -26,7 +26,7 @@
          width: 100%;
     align-items: center;
     justify-content: center;
-   height: 40px;
+   height: 45px;
    z-index: 909090;
 }
  .search-route {

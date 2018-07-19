@@ -68,7 +68,7 @@ export default {
 <style lang="less">
 #index{
     width: 100%;
-    height:6rem;
+    height:6.5rem;
     /* overflow-y: hidden; */
 }
 #singer .mu-list{
@@ -78,18 +78,26 @@ export default {
     width:95%;
     padding:0;
     
+        display: flex;
+         flex-direction:column !important;
+       
 }
 .s{
         border-bottom:1px solid #ccc;
         display: block;
         width:100%;
-        
+         display: flex;
+         align-items: center;
     }
 #singer .mu-list li:nth-last-child(1){
     border:none;
 }
+.mu-list>li{
+    display: block;
+    margin: 0 auto;
+}
 #singer{
-    height:36rem;
+    height:51rem;
     overflow: auto;
 }
 .singer {

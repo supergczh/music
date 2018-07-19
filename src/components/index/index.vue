@@ -53,6 +53,7 @@ export default {
 
 <style >
 body {
+   /* overflow: hidden !important; */
   background: #fff !important;
 }
 .mu-tabs{
@@ -60,7 +61,7 @@ body {
 }
 #index{
     width: 100%;
-    height:6rem;
+    height:6.5rem;
     /* overflow-y: hidden; */
 }
 #thunk {
